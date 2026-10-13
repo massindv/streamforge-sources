@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "name": "StreamForge Sources",
+  "sources": [
+    {
+      "id": "rutube-live",
+      "type": "provider",
+      "provider": "rutube",
+      "enabled": true,
+      "items": [
+        {
+          "url": "https://rutube.ru/video/1bf2ee9dc3e20b4cb5a7ed4833bd7cb2/",
+          "media_type": "live"
+        }
+      ]
+    },
+    {
+      "id": "dailymotion-collection",
+      "type": "provider",
+      "provider": "dailymotion",
+      "enabled": true,
+      "items": [
+        {
+          "url": "https://www.dailymotion.com/video/xanrqeq",
+          "media_type": "auto"
+        }
+      ]
+    },
+    {
+      "id": "external-live",
+      "type": "m3u",
+      "path": "playlists/live.m3u",
+      "enabled": true
+    }
+  ]
