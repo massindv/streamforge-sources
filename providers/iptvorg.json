@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "name": "IPTV.org",
+  "items": [
+    {
+      "reference": "iptvorg://replace-with-a-channel-id",
+      "media_type": "live",
+      "title": "Replace me: IPTV.org channel",
+      "description": "The id after iptvorg:// is the channel id IPTV.org publishes. The hub resolves the channel's current stream at playback time, so a stream URL that changes upstream is never frozen here.",
+      "category": "IPTV.org"
+    }
+  ]
+}

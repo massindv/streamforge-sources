@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "2M",
+  "items": [
+    {
+      "reference": "my2m://2m_monde",
+      "media_type": "live",
+      "title": "2M Monde",
+      "description": "2M live channels are addressed by the channel id the 2M plugin already uses (2m_monde, 2m_national, and so on). These entries need the 2M provider account the hub already holds; nothing about that account is stored in this repository.",
+      "category": "2M"
+    },
+    {
+      "reference": "my2m://2m_national",
+      "media_type": "live",
+      "title": "2M National",
+      "category": "2M"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "name": "Dailymotion",
+  "items": [
+    {
+      "reference": "https://www.dailymotion.com/video/x8abcd1",
+      "media_type": "movie",
+      "title": "Replace me: Dailymotion video",
+      "description": "A Dailymotion *page* URL. The hub never fetches it as media: the Dailymotion plugin turns the page id into fresh stream metadata at playback time. Replace the id with a video you are allowed to embed.",
+      "category": "Dailymotion"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="example-radio-one" group-title="Examples",Example: SoundHelix One
+https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
+#EXTINF:-1 tvg-id="example-radio-two" group-title="Examples",Example: SoundHelix Two
+https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3

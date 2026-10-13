@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="example-mux" tvg-logo="https://test-streams.mux.dev/logos/mux.png" group-title="Examples",Example: Mux test stream
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+#EXTINF:-1 tvg-id="example-apple" tvg-logo="https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/logo.png" group-title="Examples",Example: Apple BipBop
+https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8

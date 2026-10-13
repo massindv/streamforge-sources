@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "name": "RuTube",
+  "items": [
+    {
+      "reference": "rutube://1bf2ee9dc3e20b4cb5a7ed4833bd7cb2",
+      "media_type": "live",
+      "title": "RT Arabic (RuTube live)",
+      "description": "A verified RuTube live reference. The hub resolves it at playback time and mints a fresh stream URL, so an expiring provider URL is never stored in this repository.",
+      "category": "RuTube"
+    }
+  ]
+}

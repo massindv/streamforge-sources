@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "name": "Series (JSON form)",
+  "series": [
+    {
+      "id": "example-provider-show",
+      "title": "Example: A show resolved by a provider",
+      "description": "Episodes here are provider references, not media URLs. The hub resolves each one at playback time through the plugin that owns it, so the expiring provider URL is minted per playback instead of being frozen into this repository.",
+      "poster": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg",
+      "category": "Series",
+      "seasons": [
+        {
+          "season": 1,
+          "episodes": [
+            {
+              "reference": "rutube://0f1c9f0b0f0b4d9a9b1f000000000001",
+              "title": "Episode 01",
+              "season": 1,
+              "episode": 1
+            },
+            {
+              "reference": "rutube://0f1c9f0b0f0b4d9a9b1f000000000002",
+              "title": "Episode 02",
+              "season": 1,
+              "episode": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

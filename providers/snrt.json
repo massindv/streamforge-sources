@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "name": "SNRT",
+  "items": [
+    {
+      "reference": "snrt://alaraby",
+      "media_type": "live",
+      "title": "Replace me: SNRT channel",
+      "description": "The id after snrt:// is the channel id the SNRT plugin already knows from its own catalog. Only add channels the provider offers publicly; the hub does not bypass any access control.",
+      "category": "SNRT"
+    }
+  ]
+}

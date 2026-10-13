@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "name": "Movies (JSON form)",
+  "movies": [
+    {
+      "reference": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "title": "Example: Sintel",
+      "description": "A movie declared as JSON, with a poster and a duration.",
+      "poster": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg",
+      "category": "Movies",
+      "duration": 888
+    },
+    {
+      "reference": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "title": "Example: Tears of Steel",
+      "poster": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg",
+      "category": "Movies",
+      "duration": 734
+    }
+  ]
+}

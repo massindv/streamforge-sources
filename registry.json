@@ -1,35 +1,112 @@
 {
   "schema_version": 1,
-  "name": "StreamForge Sources",
+  "name": "My StreamForge registry",
+  "updated": "2026-10-13",
+  "description": "Channels, movies, series and radio for my StreamForge Hub. Edit these files on GitHub; the hub reads them, it never writes them.",
   "sources": [
+    {
+      "id": "live-channels",
+      "type": "m3u",
+      "name": "Live TV",
+      "category": "Live",
+      "path": "playlists/live.m3u"
+    },
+    {
+      "id": "movies-m3u",
+      "type": "m3u",
+      "name": "Movies (playlist)",
+      "category": "Movies",
+      "media_type": "movie",
+      "path": "playlists/movies.m3u"
+    },
+    {
+      "id": "radio-m3u",
+      "type": "m3u",
+      "name": "Radio",
+      "category": "Radio",
+      "media_type": "radio",
+      "path": "playlists/radio.m3u"
+    },
+    {
+      "id": "shows-playlist",
+      "type": "series",
+      "name": "Series",
+      "category": "Series",
+      "path": "playlists/series.json"
+    },
+    {
+      "id": "movies-json",
+      "type": "movies",
+      "name": "Movies (JSON)",
+      "category": "Movies",
+      "path": "collections/movies.json"
+    },
+    {
+      "id": "shows-json",
+      "type": "series",
+      "name": "Series (JSON)",
+      "category": "Series",
+      "path": "collections/series.json"
+    },
     {
       "id": "rutube-live",
       "type": "provider",
       "provider": "rutube",
-      "enabled": true,
-      "items": [
-        {
-          "url": "https://rutube.ru/video/1bf2ee9dc3e20b4cb5a7ed4833bd7cb2/",
-          "media_type": "live"
-        }
-      ]
+      "name": "RuTube",
+      "category": "RuTube",
+      "path": "providers/rutube.json"
     },
     {
-      "id": "dailymotion-collection",
+      "id": "dailymotion",
       "type": "provider",
       "provider": "dailymotion",
-      "enabled": true,
-      "items": [
-        {
-          "url": "https://www.dailymotion.com/video/xanrqeq",
-          "media_type": "auto"
-        }
-      ]
+      "name": "Dailymotion",
+      "category": "Dailymotion",
+      "path": "providers/dailymotion.json",
+      "enabled": false
     },
     {
-      "id": "external-live",
-      "type": "m3u",
-      "path": "playlists/live.m3u",
-      "enabled": true
+      "id": "snrt",
+      "type": "provider",
+      "provider": "snrt",
+      "name": "SNRT",
+      "category": "SNRT",
+      "path": "providers/snrt.json",
+      "enabled": false
+    },
+    {
+      "id": "forja",
+      "type": "provider",
+      "provider": "forja",
+      "name": "FORJA",
+      "category": "FORJA",
+      "path": "providers/forja.json",
+      "enabled": false
+    },
+    {
+      "id": "iptvorg",
+      "type": "provider",
+      "provider": "iptvorg",
+      "name": "IPTV.org",
+      "category": "IPTV.org",
+      "path": "providers/iptvorg.json",
+      "enabled": false
+    },
+    {
+      "id": "my2m",
+      "type": "provider",
+      "provider": "my2m",
+      "name": "2M",
+      "category": "2M",
+      "path": "providers/my2m.json",
+      "enabled": false
+    },
+    {
+      "id": "direct-hls",
+      "type": "hls",
+      "name": "Direct HLS",
+      "category": "Direct",
+      "path": "providers/direct-hls.json"
     }
   ]
+}

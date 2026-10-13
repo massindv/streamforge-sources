@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/streamforge/registry.schema.json",
+  "title": "StreamForge hub source registry",
+  "description": "The manifest a StreamForge Hub reads from a public GitHub repository. Version 1. Only the keys listed here are understood: an unknown key makes the whole document be refused rather than silently ignored, so a typo can never look like a working entry.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "sources"],
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "description": "Must be exactly 1. A newer version is refused, so an older hub never half-understands a newer document."
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 300,
+      "description": "A human name for the repository."
+    },
+    "updated": {
+      "type": "string",
+      "description": "Free-form date/label shown in diagnostics."
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "sources": {
+      "type": "array",
+      "maxItems": 64,
+      "description": "Up to 64 sources, 5000 entries each, 20000 entries in total.",
+      "items": { "$ref": "#/$defs/source" }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 64,
+          "pattern": "^[A-Za-z0-9._-]+$",
+          "description": "Stable source id. It owns the entries it contributes: disabling or removing the source removes only its own rows."
+        },
+        "type": {
+          "enum": ["provider", "m3u", "movies", "series", "hls"],
+          "description": "provider = references resolved by a plugin; m3u = a playlist; movies/series = a JSON collection; hls = direct media URLs."
+        },
+        "provider": {
+          "type": "string",
+          "description": "Required for type=provider. One of the hub's provider ids: rutube, dailymotion, snrt, forja, iptvorg, my2m, quran, bilibili."
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "category": {
+          "type": "string",
+          "maxLength": 80,
+          "description": "Group title entries of this source are listed under. Defaults to name, then id."
+        },
+        "path": {
+          "type": "string",
+          "maxLength": 512,
+          "description": "A path inside the repository, relative and free of '..'. Required for m3u, movies and series; optional for provider and hls (which otherwise take an inline items array). Declaring both path and items is refused."
+        },
+        "media_type": {
+          "enum": ["live", "movie", "series", "radio", "auto"],
+          "description": "The media type the source's entries have when they do not declare one. This is how an M3U file can say 'these lines are films'."
+        },
+        "enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "A disabled source contributes nothing and its entries are removed from the catalog."
+        },
+        "items": {
+          "type": "array",
+          "maxItems": 5000,
+          "items": { "$ref": "#/$defs/item" }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "provider" } } },
+          "then": { "required": ["provider"] }
+        },
+        {
+          "if": { "properties": { "type": { "enum": ["m3u", "movies", "series"] } } },
+          "then": { "required": ["path"] }
+        }
+      ]
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reference"],
+      "properties": {
+        "reference": {
+          "type": "string",
+          "maxLength": 2048,
+          "description": "Either a public media URL (http/https, no credentials, no private or loopback address) or a provider reference (https page URL on a provider's host, or <provider>://<content-id>)."
+        },
+        "url": {
+          "type": "string",
+          "maxLength": 2048,
+          "description": "Accepted as an alias of reference."
+        },
+        "media_type": {
+          "enum": ["live", "movie", "series", "radio", "auto"],
+          "description": "Defaults to the source's media_type, then to what the source type implies."
+        },
+        "title": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 2000
+        },
+        "poster": {
+          "type": "string"
+        },
+        "logo": {
+          "type": "string",
+          "description": "Accepted as an alias of poster (the M3U vocabulary)."
+        },
+        "category": {
+          "type": "string",
+          "maxLength": 80
+        },
+        "group": {
+          "type": "string",
+          "maxLength": 80,
+          "description": "Accepted as an alias of category (the M3U vocabulary)."
+        },
+        "duration": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "season": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "episode": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "series_id": {
+          "type": "string",
+          "description": "Groups an episode under one series row. Without it an entry is a row of its own."
+        },
+        "series_title": {
+          "type": "string",
+          "maxLength": 300
+        }
+      }
+    }
+  }
+}
