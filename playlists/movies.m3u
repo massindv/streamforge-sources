@@ -1,5 +1,8 @@
 #EXTM3U
-#EXTINF:596 tvg-id="example-bbb" tvg-logo="https://images.bauerhosting.com/empire/2010/09/best-movie-trilogies-header.png" group-title="Examples",Example: Big Buck Bunny
+#EXTINF:596 tvg-id="example-bbb" tvg-logo="https://images.bauerhosting.com/empire/2010/09/best-movie-trilogies-header.png" group-title="Test Movie",Example: Big Buck Bunny
 https://zggg98sgwbg1gh.bitchute.com/qZRSswWvo5ZZ/7GIYykvBfr90.mp4
-#EXTINF:653 tvg-id="example-ed" tvg-logo="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg" group-title="Examples",Example: Elephants Dream
+#EXTINF:653 tvg-id="example-ed" tvg-logo="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg" group-title="Test Movie",Example: Elephants Dream
 https://seed167b.bitchute.com/qZRSswWvo5ZZ/Nq4mhx9E6j88.mp4
+
+#EXTINF:653 tvg-id="example-ed" tvg-logo="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg" group-title="Test Movie",تسفيتنياشكي 
+https://river-3-373.rtbcdn.ru/hls-vod/FqSdVtjsCZwEhhgL5Tz96A/1792568532/3502/0x5000c500fa77d0df/28325f3340364497bb943676a2443504.mp4.m3u8
