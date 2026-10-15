@@ -6,7 +6,7 @@
       "reference": "forja://114637",
       "media_type": "movie",
       "title": "Ali Zaouat",
-      "description": "The id after forja:// is the content id the FORJA plugin uses in its own catalog. FORJA playback tokens are short-lived, so the hub mints one per playback from the plugin rather than storing it here.",
+      "description": "",
       "category": "FORJA"
     }
   ]
