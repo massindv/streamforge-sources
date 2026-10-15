@@ -8,6 +8,13 @@
       "title": "RT Arabic (RuTube live)",
       "description": "A verified RuTube live reference. The hub resolves it at playback time and mints a fresh stream URL, so an expiring provider URL is never stored in this repository.",
       "category": "RuTube"
+    },
+    {
+      "reference": "rutube://c58f502c7bb34a8fcdd976b221fca292",
+      "media_type": "live",
+      "title": "Первый канал (RuTube live)",
+      "description": "Official live stream of Channel One Russia (Первый канал) broadcasted live via RuTube.",
+      "category": "RuTube"
     }
   ]
 }
