@@ -3,9 +3,9 @@
   "name": "FORJA",
   "items": [
     {
-      "reference": "forja://replace-with-a-content-id",
+      "reference": "forja://114637",
       "media_type": "movie",
-      "title": "Replace me: FORJA content",
+      "title": "Ali Zaouat",
       "description": "The id after forja:// is the content id the FORJA plugin uses in its own catalog. FORJA playback tokens are short-lived, so the hub mints one per playback from the plugin rather than storing it here.",
       "category": "FORJA"
     }
