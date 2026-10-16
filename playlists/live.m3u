@@ -7,8 +7,6 @@ https://live.kwikmotion.com/smc1live/smc1tv.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="example-apple" https://maraya.faulio.com/storage/mediagallery/fb/94/fullhd_7e96d2e9b29b9db4183e72bedfdc5c62d10416ef.png" group-title="Maraya",Alsharqiya
 https://svs.itworkscdn.net/kablatvlive/kabtv1.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="example-apple" https://maraya.faulio.com/storage/mediagallery/fb/94/fullhd_7e96d2e9b29b9db4183e72bedfdc5c62d10416ef.png" group-title="Maraya",Alsharqiya
-http://212.186.45.34:9981/stream/channelid/2103421083?profile=pass
 #EXTINF:-1 tvg-id="stable" tvg-logo="" group-title="Africa 🌍" tvg-status="unstable",MBC 5
 http://149.100.11.252:8000/play/a026/index.m3u8
 #EXTINF:-1 tvg-id="stable" tvg-logo="" group-title="Africa 🌍" tvg-status="unstable",MBC 2
