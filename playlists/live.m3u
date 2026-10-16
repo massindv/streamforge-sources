@@ -1,9 +1,23 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="example-mux" tvg-logo="https://maraya.faulio.com/storage/mediagallery/7a/91/fullhd_52b67abf975b3722f9fa54868ec464aabac5799c.png" group-title="Maraya",Example: T Kids
+#EXTINF:-1 tvg-id="example-mux" tvg-logo="https://maraya.faulio.com/storage/mediagallery/7a/91/fullhd_52b67abf975b3722f9fa54868ec464aabac5799c.png" group-title="Maraya",T Kids
 https://live.kwikmotion.com/smckidslive/tjkids1.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="example-apple" tvg-logo="https://maraya.faulio.com/storage/mediagallery/bd/e5/small_e2d4b08eb269edbf134b01459cc79b9802f63b8b.png" group-title="Maraya",Example: Alshariqa
+#EXTINF:-1 tvg-id="example-apple" tvg-logo="https://maraya.faulio.com/storage/mediagallery/bd/e5/small_e2d4b08eb269edbf134b01459cc79b9802f63b8b.png" group-title="Maraya",Alshariqa
 https://live.kwikmotion.com/smc1live/smc1tv.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="example-apple" https://maraya.faulio.com/storage/mediagallery/fb/94/fullhd_7e96d2e9b29b9db4183e72bedfdc5c62d10416ef.png" group-title="Maraya",Example: Alsharqiya
+#EXTINF:-1 tvg-id="example-apple" https://maraya.faulio.com/storage/mediagallery/fb/94/fullhd_7e96d2e9b29b9db4183e72bedfdc5c62d10416ef.png" group-title="Maraya",Alsharqiya
 https://svs.itworkscdn.net/kablatvlive/kabtv1.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="example-apple" https://maraya.faulio.com/storage/mediagallery/fb/94/fullhd_7e96d2e9b29b9db4183e72bedfdc5c62d10416ef.png" group-title="Maraya",Alsharqiya
+http://212.186.45.34:9981/stream/channelid/2103421083?profile=pass
+#EXTINF:-1 tvg-id="stable" tvg-logo="" group-title="Africa 🌍" tvg-status="unstable",MBC 5
+http://149.100.11.252:8000/play/a026/index.m3u8
+#EXTINF:-1 tvg-id="stable" tvg-logo="" group-title="Africa 🌍" tvg-status="unstable",MBC 2
+http://149.100.11.252:8000/play/a02a/index.m3u8
+#EXTINF:-1 tvg-id="stable" tvg-logo="" group-title="Africa 🌍" tvg-status="unstable",MBC 3
+http://149.100.11.252:8000/play/a028/index.m3u8
+#EXTINF:-1 tvg-id="stable" tvg-logo="" group-title="Africa 🌍" tvg-status="unstable",MBC 4
+http://149.100.11.252:8000/play/a027/index.m3u8
+#EXTINF:-1 tvg-id="stable" tvg-logo="" group-title="Africa 🌍" tvg-status="unstable",MBC 5
+http://149.100.11.252:8000/play/a026/index.m3u8
+#EXTINF:-1 tvg-id="stable" tvg-logo="" group-title="Africa 🌍" tvg-status="",MBC 2
+http://149.100.11.252:8000/play/a02a/index.m3u8
