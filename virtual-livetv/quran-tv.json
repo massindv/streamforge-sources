@@ -1,0 +1,17 @@
+{
+  "name": "Quran TV Live",
+  "schedule": [
+    {
+      "id": "al_fatiha",
+      "source": "https://rumble.com/v79xetk-surah-al-fatiha-full-warsh-recitation-moroccan-quran.html"
+    },
+    {
+      "id": "al_baqarah",
+      "source": "https://rumble.com/v79xfjq-surah-al-baqarah-full-warsh-quran-recitation-moroccan-style.html"
+    },
+    {
+      "id": "aal_imran",
+      "source": "https://rumble.com/v79xfx2-surah-aal-imran-full-warsh-recitation-moroccan-quran.html"
+    }
+  ]
+}
