@@ -3,7 +3,7 @@
   "name": "Direct HLS",
   "items": [
     {
-      "reference": "https://live.kwikmotion.com/smckidslive/tjkids1.smil/smckidspublish/tjkids1_source/chunks.m3u8",
+      "reference": "tivify://INF60",
       "media_type": "live",
       "title": "Example: direct HLS (DASH-style master)",
       "description": "A direct HLS URL: the hub relays it, and nobody's credentials are involved. Any public host is allowed here, but never a private, loopback or link-local address.",
