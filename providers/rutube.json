@@ -10,9 +10,9 @@
       "category": "RuTube"
     },
     {
-      "reference": "rutube://c58f502c7bb34a8fcdd976b221fca292",
+      "reference": "http://127.0.0.1:8890/plugins/tivify/INF70",
       "media_type": "live",
-      "title": "Первый канал (RuTube live)",
+      "title": "france 24 español (RuTube live)",
       "description": "Official live stream of Channel One Russia (Первый канал) broadcasted live via RuTube.",
       "category": "RuTube"
     }
