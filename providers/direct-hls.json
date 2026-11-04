@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "name": "Direct HLS",
+  "name": "france 24 español",
   "items": [
     {
-      "reference": "tivify://INF60",
+      "reference": "http://127.0.0.1:8890/plugins/tivify/INF70",
       "media_type": "live",
       "title": "Example: direct HLS (DASH-style master)",
       "description": "A direct HLS URL: the hub relays it, and nobody's credentials are involved. Any public host is allowed here, but never a private, loopback or link-local address.",
