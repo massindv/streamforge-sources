@@ -33,6 +33,50 @@ tivify://channel/INF57
 
 #EXTINF:-1 tvg-id="INT36" tvg-name="Aljazeera Arabic" tvg-logo="" group-title="Tivify",Aljazeera Arabic
 tivify://channel/INT36
+#EXTINF:-1 tvg-id="GNA04" tvg-name="France 24 English" tvg-logo="https://media.tvup.cloud/canales/5ac5e4b203080405b20a4fe5logoBlanco.png" group-title="Tivify",Cuatro
+tivify://channel/GNA04
+
+#EXTINF:-1 tvg-id="ENA41" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",Neox
+tivify://channel/ENA41
+
+#EXTINF:-1 tvg-id="ENA21" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",AXN
+tivify://channel/ENA21
+
+#EXTINF:-1 tvg-id="DOC25" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",Historia
+tivify://channel/DOC25
+
+#EXTINF:-1 tvg-id="DOC34" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",AMC Break
+tivify://channel/DOC34
+
+#EXTINF:-1 tvg-id="INF70" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",
+tivify://channel/
+
+#EXTINF:-1 tvg-id="INF70" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",
+tivify://channel/
+
+#EXTINF:-1 tvg-id="INF70" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",
+tivify://channel/
+
+#EXTINF:-1 tvg-id="INF70" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",
+tivify://channel/
+
+#EXTINF:-1 tvg-id="INF70" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",
+tivify://channel/
+
+#EXTINF:-1 tvg-id="INF70" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",
+tivify://channel/
+
+#EXTINF:-1 tvg-id="INF70" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",
+tivify://channel/
+
+#EXTINF:-1 tvg-id="INF70" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",
+tivify://channel/
+
+#EXTINF:-1 tvg-id="INF70" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",
+tivify://channel/
+
+#EXTINF:-1 tvg-id="INF70" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",
+tivify://channel/
 
 # --- African / MBC channels (unchanged upstream) -----------------------------
 #EXTINF:-1 tvg-id="mbc5" tvg-name="MBC 5" tvg-logo="" group-title="Africa 🌍" tvg-status="unstable",MBC 5
