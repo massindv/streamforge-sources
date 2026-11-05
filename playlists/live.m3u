@@ -5,6 +5,8 @@ http://127.0.0.1:8890/plugins/tivify/INF70
 http://127.0.0.1:8890/plugins/tivify/INF57
 #EXTINF:-1 tvg-id="INF60" tvg-logo="" group-title="tivify",Aljazeera Arabic
 http://127.0.0.1:8890/plugins/tivify/INT36
+#EXTINF:-1 tvg-id="INF60" tvg-logo="" group-title="tivify",01 France 24 English
+http://192.168.129.5:8890/plugins/tivify/INF70
 #EXTINF:-1 tvg-id="INF60" tvg-logo="" group-title="tivify",France 24 English
 http://127.0.0.1:8890/plugins/tivify/INF70
 #EXTINF:-1 tvg-id="stable" tvg-logo="" group-title="Africa 🌍" tvg-status="unstable",MBC 5
