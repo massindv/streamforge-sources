@@ -1,14 +1,41 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="INF60" tvg-logo="" group-title="tivify",france 24 español
-http://127.0.0.1:8890/plugins/tivify/INF70
-#EXTINF:-1 tvg-id="INF60" tvg-logo="" group-title="tivify",Aljazeera English
-http://127.0.0.1:8890/plugins/tivify/INF57
-#EXTINF:-1 tvg-id="INF60" tvg-logo="" group-title="tivify",Aljazeera Arabic
-http://127.0.0.1:8890/plugins/tivify/INT36
-#EXTINF:-1 tvg-id="INF60" tvg-logo="" group-title="tivify",01 France 24 English
-http://192.168.129.5:8890/plugins/tivify/INF70
-#EXTINF:-1 tvg-id="INF60" tvg-logo="" group-title="tivify",France 24 English
-http://127.0.0.1:8890/plugins/tivify/INF70
+# StreamForge Hub — Tivify live channels (LAN gateway 192.168.129.5:8890)
+#
+# Why the addresses look like this:
+#   * 192.168.129.5 is the Fire TV's LAN address. 127.0.0.1 only works on the
+#     device itself, so a TiviMate box or IPTVnator on a PC could never tune it.
+#   * the .m3u8 suffix is required by strict players (IPTVnator's Chromium
+#     player factory refuses an extension-less URL).
+#   * EXTVLCOPT / KODIPROP repeat the TVUp player identity for clients that
+#     fetch the stream themselves; the gateway also injects it server-side.
+#   * tivify://channel/<code> is the same channel as an internal reference and
+#     is what the hub resolves without any loopback HTTP call.
+
+#EXTINF:-1 tvg-id="INF70" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",France 24 English
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://tivify.es/
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36&Referer=https://tivify.es/
+http://192.168.129.5:8890/plugins/tivify/INF70.m3u8
+
+#EXTINF:-1 tvg-id="INF60" tvg-name="France 24 Español" tvg-logo="" group-title="Tivify",France 24 Español
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://tivify.es/
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36&Referer=https://tivify.es/
+http://192.168.129.5:8890/plugins/tivify/INF60.m3u8
+
+#EXTINF:-1 tvg-id="INF57" tvg-name="Aljazeera English" tvg-logo="" group-title="Tivify",Aljazeera English
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://tivify.es/
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36&Referer=https://tivify.es/
+http://192.168.129.5:8890/plugins/tivify/INF57.m3u8
+
+#EXTINF:-1 tvg-id="INT36" tvg-name="Aljazeera Arabic" tvg-logo="" group-title="Tivify",Aljazeera Arabic
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://tivify.es/
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36&Referer=https://tivify.es/
+http://192.168.129.5:8890/plugins/tivify/INT36.m3u8
+
+# --- African / MBC channels (unchanged upstream) -----------------------------
 #EXTINF:-1 tvg-id="stable" tvg-logo="" group-title="Africa 🌍" tvg-status="unstable",MBC 5
 http://149.100.11.252:8000/play/a026/index.m3u8
 #EXTINF:-1 tvg-id="stable" tvg-logo="" group-title="Africa 🌍" tvg-status="unstable",MBC 2
@@ -17,7 +44,3 @@ http://149.100.11.252:8000/play/a02a/index.m3u8
 http://149.100.11.252:8000/play/a028/index.m3u8
 #EXTINF:-1 tvg-id="stable" tvg-logo="" group-title="Africa 🌍" tvg-status="unstable",MBC 4
 http://149.100.11.252:8000/play/a027/index.m3u8
-#EXTINF:-1 tvg-id="stable" tvg-logo="" group-title="Africa 🌍" tvg-status="unstable",MBC 5
-http://149.100.11.252:8000/play/a026/index.m3u8
-#EXTINF:-1 tvg-id="stable" tvg-logo="" group-title="Africa 🌍" tvg-status="",MBC 2
-http://149.100.11.252:8000/play/a02a/index.m3u8
