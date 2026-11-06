@@ -34,23 +34,28 @@ tivify://channel/INF57
 #EXTINF:-1 tvg-id="INT36" tvg-name="Aljazeera Arabic" tvg-logo="" group-title="Tivify",Aljazeera Arabic
 tivify://channel/INT36
 #EXTINF:-1 tvg-id="GNA04" tvg-name="France 24 English" tvg-logo="https://media.tvup.cloud/canales/5ac5e4b203080405b20a4fe5logoBlanco.png" group-title="Tivify",Cuatro
+#EXTVLCOPT:http-referrer=tivify.tv/
 tivify://channel/GNA04
 
 #EXTINF:-1 tvg-id="ENA41" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",Neox
+#EXTVLCOPT:http-referrer=tivify.tv/
 tivify://channel/ENA41
 
 #EXTINF:-1 tvg-id="ENA21" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",AXN
+#EXTVLCOPT:http-referrer=tivify.tv/
 tivify://channel/ENA21
 
 #EXTINF:-1 tvg-id="DOC25" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",Historia
+#EXTVLCOPT:http-referrer=tivify.tv/
 tivify://channel/DOC25
 
 #EXTINF:-1 tvg-id="DOC34" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",AMC Break
+#EXTVLCOPT:http-referrer=tivify.tv/
 tivify://channel/DOC34
 
-#EXTINF:-1 tvg-id="INF70" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",
-tivify://channel/
-
+#EXTINF:-1 tvg-id="INF70" tvg-name="cuatroh" tvg-logo="" group-title="Tivify",cuatro2
+#EXTVLCOPT:http-referrer=tivify.tv/
+https://live.s2l.workers.dev/hls/cuatro
 #EXTINF:-1 tvg-id="INF70" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",
 tivify://channel/
 
