@@ -53,8 +53,8 @@ tivify://channel/DOC25
 #EXTVLCOPT:http-referrer=tivify.tv/
 tivify://channel/DOC34
 
-#EXTINF:-1 tvg-id="INF70" tvg-name="cuatroh" tvg-logo="" group-title="Tivify",cuatro2
-#EXTVLCOPT:http-referrer=tivify.tv/
+#EXTINF:-1 tvg-id="cuatro2" tvg-name="Cuatro Worker Relay" group-title="Tivify",cuatro2
+#EXTVLCOPT:http-referrer=https://tivify.tv/
 https://live.s2l.workers.dev/hls/cuatro
 #EXTINF:-1 tvg-id="INF70" tvg-name="France 24 English" tvg-logo="" group-title="Tivify",
 tivify://channel/
